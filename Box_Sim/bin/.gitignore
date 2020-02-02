@@ -7,3 +7,8 @@
 /Simulation.class
 /Tube.class
 /TubeFit.class
+/HyperbolicWall.class
+/Integrate.class
+/HyperbolicCone.class
+/Integrate0.class
+/HyperbolicConeFit.class

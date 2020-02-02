@@ -1,7 +1,7 @@
 
 
 
-public class RectFit extends Rect {
+public class RectFit extends Rect{
 	
 	private static int maxPlantNum = 0;
 	private static int maxRectNum = 0;

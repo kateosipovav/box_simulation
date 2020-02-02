@@ -11,7 +11,7 @@ public class Plant {
 	//*
 	//*
 	//*
-public static final double SPREAD = (double)45;
+public static final double SPREAD = 45;
 public static final double HEIGHT = 23;
 
 public static final double VOLUME = (2*Math.PI*Math.pow(SPREAD/2, 2)*HEIGHT/3);

@@ -1,5 +1,6 @@
 /*
-
+//https://issuu.com/riccardoricci/docs/29653339-programming-finite-elements-in-java-janua
+ //read this to visualize the mesh
 import java.awt.*;
 //import java.awt.Graphics;
 import java.awt.event.*;
