@@ -1,4 +1,4 @@
-/*
+
 //https://issuu.com/riccardoricci/docs/29653339-programming-finite-elements-in-java-janua
  //read this to visualize the mesh
 import java.awt.*;
@@ -52,7 +52,7 @@ public class SimulationGraphics extends Frame {
 	   public static void main(String args[]) {
         new SimulationGraphics();
 	  }
-	  *//**
+	  /**
 	  * The Example01 constructor sets the frame's size, adds the
    * visual components, and then makes them visible to the user.
 	    *
@@ -60,7 +60,7 @@ public class SimulationGraphics extends Frame {
 	   * has the heavyweight component it needs to render 3D
 	   * graphics into.  We then call methods to construct the
 	  * View and Content branches of our scene graph.
-	 **//*
+	 */
 	 public SimulationGraphics() {
 	    //Title our frame and set its size.
     super("Java 3D Example01");
@@ -94,7 +94,7 @@ public class SimulationGraphics extends Frame {
 	   constructContentBranch(myLocale);
 	  }
 
-	  *//**
+	  /*
 	060    * constructView() takes a Canvas3D reference and constructs
 	061    * a View to display in that Canvas3D.  It uses the default
 	062    * PhysicalBody and PhysicalEnvironment (both required to be
@@ -103,7 +103,7 @@ public class SimulationGraphics extends Frame {
 	065    * the scene graph's ViewPlatform to a Canvas3D for rendering.
 	066    *
 	067    * @see constructViewBranch(View)
-	068   **//*
+	068   */
 	   private View constructView(Canvas3D myCanvas3D) {
 	  View myView = new View();
 	    myView.addCanvas3D(myCanvas3D);
@@ -111,7 +111,7 @@ public class SimulationGraphics extends Frame {
     myView.setPhysicalEnvironment(new PhysicalEnvironment());
   return(myView);
 	  }
-	  *//**
+	  /**
 	079    * constructViewBranch() takes as input a View which we
 	080    * attached to our Canvas3D in constructView().  It constructs
 	081    * a default view branch for the scene graph, attaches
@@ -121,7 +121,7 @@ public class SimulationGraphics extends Frame {
 	085    *
 	086    * @see constructView(Canvas3D)
 	087    * @see constructContentBranch(Locale)
-	088   **//*
+	088   */
 	  private Locale constructViewBranch(View myView) {
 	     //First, we create the necessary coordinate systems 
 	    //(VirtualUniverse, Locale), container nodes
@@ -132,28 +132,27 @@ public class SimulationGraphics extends Frame {
 	     TransformGroup myTransformGroup = new TransformGroup();
 	    ViewPlatform myViewPlatform = new ViewPlatform();
 	    Next, we insert the platform into the transform group, 
-	102     //the transform group into the branch group, and the branch
-	103     //group into the locale's branch graph portion of the 
-	104     //scene graph0.
+	    //the transform group into the branch group, and the branch
+	   //group into the locale's branch graph portion of the 
+	    //scene graph0.
 	
 	   myTransformGroup.addChild(myViewPlatform);
 	   myBranchGroup.addChild(myTransformGroup);
 	   myLocale.addBranchGraph(myBranchGroup);
-	     Finally, we attach our view to the view platform and we
-	110     //return a reference to our new universe.  We are ready to 
-	111     render 3D content!
+	    // Finally, we attach our view to the view platform and we
+	     //return a reference to our new universe.  We are ready to     render 3D content!
 	 
 	    myView.attachViewPlatform(myViewPlatform);
 	    return(myLocale);
 	  }
-	   *//**
+	   /*
 	117    * constructContentBranch() is where we specify the 3D graphics
 	118    * content to be rendered into the Locale referenced
 	119    * in the passed parameter.  Nothing is currently specified, so we
 	120    * render an empty universe.
 	121    *
 	122    * @see constructViewBranch(View)
-	123   **//*
+	123   */
 	  private void constructContentBranch(Locale myLocale) {
 		  
 //Insert content to be rendered here.
@@ -177,6 +176,5 @@ public class SimulationGraphics extends Frame {
 	  }
 	 }
 
-	}
+	
 
-*/

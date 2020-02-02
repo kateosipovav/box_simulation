@@ -2,5 +2,10 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libraries/GL4JavaGljMSJDirect.dll"/>
+	<classpathentry kind="lib" path="libraries/GL4JavaJauGljJNI12.dll"/>
+	<classpathentry kind="lib" path="libraries/GL4JavaJauGljJNI.dll"/>
+	<classpathentry kind="lib" path="libraries/GL4JavaJauGljJNI13.dll"/>
+	<classpathentry kind="lib" path="libraries/GL4JavaJauGljJNI14.dll"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
