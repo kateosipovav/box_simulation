@@ -42,6 +42,9 @@ public class HyperbolicCone {
 		double bVol = Integrate.integrateAdapt(a, b, coefficient, 1, rotaxis);
 		return (sVol + bVol);
 	}
+	public double getVolumeAroundCone(){
+		
+	}
 	public double getSurfaceArea(){
 		calcB();
 		calcA();
@@ -51,6 +54,29 @@ public class HyperbolicCone {
 		double bArea = Integrate.integrateAdapt(-b, 0, coefficient, 2, rotaxis);
 		
 		return (sArea + bArea);
+	}
+	public int getMaxNumPlants(){
+		
+		int volumeMaxNum = (int)(getVolumeAroundCone()/Plant.VOLUME);
+		int areaMaxNum = (int)(getSurfaceArea()/Plant.BASESURFACE);
+		
+		if (volumeMaxNum <= areaMaxNum){
+			System.out.println("The volume is the limiting factor");
+			System.out.println("The number of plants this time is " + volumeMaxNum);
+			System.out.println("__________________________________________________");
+			System.out.println();
+			System.out.println();
+			return volumeMaxNum;
+		}
+		
+		else{
+			System.out.println("The area is the limiting factor");
+			System.out.println("The number of plants this time is " + areaMaxNum);
+			System.out.println("__________________________________________________");
+			System.out.println();
+			System.out.println();
+			return areaMaxNum;
+		}
 	}
 	}
 
