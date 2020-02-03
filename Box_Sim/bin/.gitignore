@@ -1,14 +1,12 @@
 /Cone.class
 /ConeFit.class
 /Cubicle.class
+/HyperbolicCone.class
+/HyperbolicConeFit.class
+/Integrate.class
 /Plant.class
 /Rect.class
 /RectFit.class
 /Simulation.class
 /Tube.class
 /TubeFit.class
-/HyperbolicWall.class
-/Integrate.class
-/HyperbolicCone.class
-/Integrate0.class
-/HyperbolicConeFit.class
